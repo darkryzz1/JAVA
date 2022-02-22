@@ -72,6 +72,4 @@ public class Course
 
 }
 
-public void setAttendance{
-    this
-        }
+
