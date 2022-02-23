@@ -1,37 +1,28 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/** Represents the course list which contains courses.
- */
+
 public class CourseList {
     private ArrayList<Course> courseList;
 
-    /** No-arg constructor to make an instance of class.
-     */
+
     public CourseList()
     {
         courseList = new ArrayList<>();
     }
 
-    /** Gets the course list.
-     * @return An array list containing the courses.
-     */
+
     public ArrayList<Course> getCourseList()
     {
         return courseList;
     }
 
-    /** Sets the course list.
-     */
+
     public void setCourseList(ArrayList<Course> courseList)
     {
         this.courseList = courseList;
     }
 
-    /** Adds the course(s) in course list.
-     * @param numOfCourses An integer representing the number of courses to be added in course list.
-     * @throws IllegalArgumentException if number of courses are invalid (zero or negative).
-     */
     public void addCourse(int numOfCourses)
     {
         if (numOfCourses > 0) {

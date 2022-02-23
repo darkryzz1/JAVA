@@ -2,21 +2,18 @@ import java.util.Scanner;
 
 
 
-public class UserInterface
+public class Main
 {
-    /** Runs the program or starting point of execution.
-     * @param args Command-line arguments
-     */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.println("Hello!\nPlease enter the number of courses for which you want to calculate GPA");
+        System.out.println("Hello!\n Enter the number of tour courses for which you want to calculate GPA");
         int numOfCourses = input.nextInt();
         CourseList courseList = new CourseList();
         GPACalculator calculator = GPACalculator.getInstance();
         try {
             courseList.addCourse(numOfCourses);
-            System.out.printf("Your GPA is %.2f",calculator.calculateGPA(courseList.getCourseList()));
+            System.out.print("Your GPA is " + calculator.calculateGPA(courseList.getCourseList()));
         }
         catch (IllegalArgumentException exception)
         {
