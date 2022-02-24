@@ -45,11 +45,11 @@ public class Course
     public String getGrade() {
         return grade;
     }
-     * @param grade
-     */
+
     public void setGrade(String grade) {
         this.grade = grade;
     }
+}
 
 }
 
